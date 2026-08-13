@@ -4,4 +4,8 @@ Allow: /
 # Blog / Journal (posts authored in Wix, published here)
 Allow: /blog
 
+# Unlisted pages — shared by direct link only, kept out of search
+Disallow: /brochure
+Disallow: /brochure.html
+
 Sitemap: https://tropik-media.com/sitemap.xml

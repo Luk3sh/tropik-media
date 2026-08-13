@@ -5,6 +5,15 @@
   "outputDirectory": ".",
   "rewrites": [
     { "source": "/blog", "destination": "/blog.html" },
-    { "source": "/blog/:slug", "destination": "/post.html" }
+    { "source": "/blog/:slug", "destination": "/post.html" },
+    { "source": "/brochure", "destination": "/brochure.html" }
+  ],
+  "headers": [
+    {
+      "source": "/brochure(.html)?",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow" }
+      ]
+    }
   ]
 }
